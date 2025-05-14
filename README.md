@@ -32,18 +32,62 @@ Une application web développée avec **Flask** permettant de gérer des étudia
 
 ---
 
-## 📦 Installation Locale
+---
 
-1. **Cloner le dépôt**
+##. 🔒 Sécurité
+CSRF protection activée via Flask-WTF
+
+Mots de passe hachés avec Bcrypt
+
+Accès aux routes restreint aux utilisateurs connectés
+
+--- 
+##. 🤝 Contribuer
+Les contributions sont les bienvenues ! Forkez le projet, créez une branche, soumettez un pull request.
+
+##. 📄 Licence
+Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus d’informations.
+
+##. 👤 Auteur
+Développé par Votre @aimanuelaka
+N’hésitez pas à me contacter pour toute suggestion ou collaboration.
+
+
+##. 📁 Arborescence
+```bash
+Copier
+Modifier
+.
+├── app.py
+├── Dockerfile
+├── requirements.txt
+├── templates/
+│   ├── ajouter_etudiant.html
+│   ├── etudiants.html
+│   └── ...
+├── static/             # fichiers JS/CSS si nécessaires
+└── README.md
+
+---
+
+
+
+
+---
+
+##. 📦 Installation Locale
+
+#1. **Cloner le dépôt**
 
 ```bash
 git clone https://github.com/aimanuelaka/Flask_Etudiant.git
 cd Flask_Etudiant
 
+---
 
 #2.Créer un environnement virtuel et l'activer
 
-bash
+
 Copier
 Modifier
 python -m venv venv
@@ -61,49 +105,3 @@ Copier
 Modifier
 python app.py
 
-#3. 🐳 Utilisation avec Docker
-Construire l'image Docker
-
-bash
-Copier
-Modifier
-docker build -t flask-etudiant-app .
-Exécuter le conteneur
-
-bash
-Copier
-Modifier
-docker run -p 5000:5000 flask-etudiant-app
-L'application sera disponible sur http://localhost:5000.
-
-#4. 📁 Arborescence
-bash
-Copier
-Modifier
-.
-├── app.py
-├── Dockerfile
-├── requirements.txt
-├── templates/
-│   ├── ajouter_etudiant.html
-│   ├── etudiants.html
-│   └── ...
-├── static/             # fichiers JS/CSS si nécessaires
-└── README.md
-#5. 🔒 Sécurité
-CSRF protection activée via Flask-WTF
-
-Mots de passe hachés avec Bcrypt
-
-Accès aux routes restreint aux utilisateurs connectés
-
-
-#🤝 Contribuer
-Les contributions sont les bienvenues ! Forkez le projet, créez une branche, soumettez un pull request.
-
-#📄 Licence
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus d’informations.
-
-#👤 Auteur
-Développé par Votre @aimanuelaka
-N’hésitez pas à me contacter pour toute suggestion ou collaboration.
